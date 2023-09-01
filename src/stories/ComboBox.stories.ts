@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Button from '@components/button/Button';
+import ComboBox from '@components/combo-box/combo-box';
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
-  title: 'Components/Button',
-  component: Button,
+  title: 'Components/ComboBox',
+  component: ComboBox,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
     layout: 'centered',
@@ -13,12 +13,20 @@ const meta = {
   tags: ['autodocs'],
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
-    type: {
-      options: ['link', 'text', 'default', 'primary', 'dashed'],
-      control: { type: 'radio' },
+    status: {
+      options: ['error', 'warning'],
+      control: { type: 'select' },
+    },
+    size: {
+      options: ['small', 'large', 'middle'],
+      control: { type: 'select' },
+    },
+    mode: {
+      options: ['multiple', 'tags', undefined],
+      control: { type: 'select' },
     },
   },
-} satisfies Meta<typeof Button>;
+} satisfies Meta<typeof ComboBox>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -26,12 +34,22 @@ type Story = StoryObj<typeof meta>;
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Primary: Story = {
   args: {
-    className: '',
-    disabled: false,
+    mode: undefined,
+    className: 'w-40',
+    size: 'large',
+    status: '',
     loading: false,
-    children: 'Test',
-    type: 'default',
-    danger: false,
+    allowClear: false,
+    bordered: undefined,
+    defaultOpen: false,
+    defaultValue: '',
+    disabled: false,
+    popupClassName: '',
+    placeholder: 'Select Data',
+    options: [
+      { label: 'test', value: 'test' },
+      { label: 'test two', value: 'test two' },
+    ],
     required: false,
   },
 };
