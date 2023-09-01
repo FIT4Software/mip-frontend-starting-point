@@ -14,7 +14,7 @@ const meta = {
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
     status: {
-      options: ['error', 'warning'],
+      options: ['error', 'warning', undefined],
       control: { type: 'select' },
     },
     size: {
@@ -24,6 +24,9 @@ const meta = {
     mode: {
       options: ['multiple', 'tags', undefined],
       control: { type: 'select' },
+    },
+    defaultValue: {
+      control: { type: 'text' },
     },
   },
 } satisfies Meta<typeof ComboBox>;
@@ -40,9 +43,9 @@ export const Primary: Story = {
     status: '',
     loading: false,
     allowClear: false,
-    bordered: undefined,
+    bordered: false,
     defaultOpen: false,
-    defaultValue: '',
+    defaultValue: undefined,
     disabled: false,
     popupClassName: '',
     placeholder: 'Select Data',
@@ -51,5 +54,6 @@ export const Primary: Story = {
       { label: 'test two', value: 'test two' },
     ],
     required: false,
+    value: undefined,
   },
 };
