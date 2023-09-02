@@ -13,6 +13,11 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       theme={{
         token: {
           colorPrimary: colors.primary,
+          colorInfo: colors.primary,
+          colorSuccess: colors.confirm,
+          colorError: colors.error,
+          colorTextBase: colors.text,
+          colorBgBase: colors.background,
         },
       }}
     >
