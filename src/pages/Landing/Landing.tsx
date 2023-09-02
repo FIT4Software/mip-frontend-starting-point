@@ -10,7 +10,7 @@ function Landing() {
 
   return (
     <div className="w-full h-screen flex items-center justify-center bg-blue-200">
-      <div className="p-40 rounded shadow-lg flex items-center justify-center flex-col gap-6 bg-white relative">
+      <div className="w-full p-20 md:p-40 md:w-auto rounded shadow-lg flex items-center justify-center flex-col gap-6 bg-white relative">
         <p className="w-full border-b border-b-blue-500 text-center font-bold text-2xl uppercase">
           <span className="text-blue-500">MIP</span> Starting Point Project
         </p>
