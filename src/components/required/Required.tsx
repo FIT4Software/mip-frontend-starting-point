@@ -8,7 +8,7 @@ const Required = ({ children, show, classNameChildren }: IPropsRequired) => {
   return (
     <div className={`flex gap-2 items-center ${heightAndWidth}`}>
       {children}
-      {show && <span className="font-bold text-red-500">*</span>}
+      {show && <span className="font-bold text-error">*</span>}
     </div>
   );
 };

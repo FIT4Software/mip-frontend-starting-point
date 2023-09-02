@@ -53,3 +53,7 @@ import { useSelector } from '@store';
 import SideBar from '@modules/SideBar/SideBar';
 import Landing from '@pages/Landing/Landing';
 ```
+
+## Style
+
+To change the default theme of the project you should change the configuration on the file `theme.config.json`, this will automatically affect `Antdesign` and `TailwindCSS`
