@@ -1,4 +1,6 @@
-const SideBar = () => {
+import { ISideBarProps } from '@interfaces';
+
+const SideBar = ({ className }: ISideBarProps) => {
   return <div></div>;
 };
 

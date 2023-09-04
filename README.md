@@ -31,7 +31,7 @@ This folder should be use to store all the types and interfaces that you need fo
 Once you create a file and export the interfaces you should add this new interface/type to the index.ts of the **Interfaces** folder, in next way:
 
 ```typescript
-export * from './yourNewInterface.ts'*
+export * from './yourNewInterface.ts';
 ```
 
 ### Modules:

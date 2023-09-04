@@ -2,9 +2,10 @@ import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import { useDispatch, useSelector, TypedUseSelectorHook } from 'react-redux';
 import { logger } from 'redux-logger';
 import Landing from './Landing';
+import Notifications from './Notifications';
 
 export const store = configureStore({
-  reducer: combineReducers({ Landing }),
+  reducer: combineReducers({ Landing, Notifications }),
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
 });
 
