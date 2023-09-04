@@ -57,3 +57,16 @@ import Landing from '@pages/Landing/Landing';
 ## Style
 
 To change the default theme of the project you should change the configuration on the file `theme.config.json`, this will automatically affect `Antdesign` and `TailwindCSS`
+
+## Troubleshooting
+
+### Type-Errors:
+
+In case you get an error like:
+
+    Cannot find type definition file for 'node'.
+    The file is in the program because:
+    Entry point of type library 'node' specified in compilerOptionsts
+    JSON schema for the TypeScript compiler's configuration file
+
+We strongly suggest to run the next command inside of the project: `npm i --save @types/node`
