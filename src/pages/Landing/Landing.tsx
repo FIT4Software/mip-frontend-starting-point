@@ -1,13 +1,12 @@
 import Button from '@components/button/Button';
-import { useAppSelector, useAppDispatch, setError, setSucces } from '@store';
+import { useAppSelector, useAppDispatch } from '@store';
+import { addCounter } from '@store';
 
 function Landing() {
   const { counter } = useAppSelector((state) => state.Landing);
   const dispatch = useAppDispatch();
-
-  const testError = () => {
-    dispatch(setError({ componentName: 'Landing', value: 'Error Dario' }));
-    dispatch(setSucces({ componentName: 'Landing', value: 'Error Dario' }));
+  const addOne = () => {
+    dispatch(addCounter());
   };
 
   return (
@@ -16,7 +15,7 @@ function Landing() {
         <p className="w-full border-b border-b-primary text-center font-bold text-2xl uppercase">
           <span className="text-primary">MIP</span> Starting Point Project
         </p>
-        <Button type="primary" className="w-40" onClick={testError}>
+        <Button type="primary" className="w-40" onClick={addOne}>
           Add One
         </Button>
         <div
