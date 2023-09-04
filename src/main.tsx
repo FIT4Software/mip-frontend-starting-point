@@ -21,6 +21,12 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
           colorTextBase: colors.text,
           colorBgBase: colors.background,
         },
+
+        components: {
+          Notification: {
+            colorBgElevated: colors.secondary,
+          },
+        },
       }}
     >
       <App>
