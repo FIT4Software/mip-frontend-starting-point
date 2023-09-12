@@ -2,29 +2,33 @@ import './index.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Landing from '@pages/Landing/Landing';
-import colors from '../theme.config.json' assert { type: 'json' };
+import theme from '../project.config.json' assert { type: 'json' };
 import UseNotificationHandler from '@components/notification-handler/UseNotificationHandler';
 import { Provider } from 'react-redux';
 import { store } from '@store';
 import { ConfigProvider } from 'antd';
 import { App } from 'antd';
+import axios from 'axios';
+
+axios.defaults.baseURL = theme.apiUrl;
+document.title = theme.name;
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <ConfigProvider
       theme={{
         token: {
-          colorPrimary: colors.primary,
-          colorInfo: colors.primary,
-          colorSuccess: colors.confirm,
-          colorError: colors.error,
-          colorTextBase: colors.text,
-          colorBgBase: colors.background,
+          colorPrimary: theme.colors.primary,
+          colorInfo: theme.colors.primary,
+          colorSuccess: theme.colors.confirm,
+          colorError: theme.colors.error,
+          colorTextBase: theme.colors.text,
+          colorBgBase: theme.colors.background,
         },
 
         components: {
           Notification: {
-            colorBgElevated: colors.secondary,
+            colorBgElevated: theme.colors.secondary,
           },
         },
       }}

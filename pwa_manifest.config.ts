@@ -1,11 +1,11 @@
 import { VitePWAOptions } from 'vite-plugin-pwa';
-import colors from './theme.config.json' assert { type: 'json' };
+import theme from './project.config.json' assert { type: 'json' };
 const manifest: Partial<VitePWAOptions> = {
   manifest: {
-    theme_color: colors.primary,
-    background_color: colors.background,
-    name: 'MIP Starting Point',
-    short_name: 'MIP Starting Point',
+    theme_color: theme.colors.primary,
+    background_color: theme.colors.background,
+    name: theme.name,
+    short_name: theme.name,
     icons: [
       {
         src: 'src/public/icon-192x192.png',

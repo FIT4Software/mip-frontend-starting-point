@@ -54,9 +54,21 @@ import SideBar from '@modules/SideBar/SideBar';
 import Landing from '@pages/Landing/Landing';
 ```
 
-## Style
+## Customization
 
-To change the default theme of the project you should change the configuration on the file `theme.config.json`, this will automatically affect `Antdesign` and `TailwindCSS`
+The project has multiple parts that are expected to be change for the developer once he starts creating new code, all this parts like: name, style and so on, are cofigured on the `theme.config.json`
+
+### API URL
+
+To change the default base-url you should go to `theme.config.json` and change the property `url` this will affect the axios base-url configured
+
+### Application Name
+
+To change the default name you should go to `theme.config.json` and change the property `name` this will affect the title of the APP, not only on the HTML but also on the PWA
+
+### Style
+
+To change the default theme of the project you should change the colors configuration on the file `theme.config.json`, this will automatically affect `Antdesign` and `TailwindCSS`
 
 ## Troubleshooting
 

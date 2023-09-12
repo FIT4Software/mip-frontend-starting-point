@@ -7,5 +7,5 @@
     "allowSyntheticDefaultImports": true,
     "types": ["node"]
   },
-  "include": ["vite.config.ts", "pwa_manifest.config.ts", "theme.config.json"]
+  "include": ["vite.config.ts", "pwa_manifest.config.ts", "project.config.json"]
 }
