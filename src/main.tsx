@@ -1,13 +1,13 @@
+import './index.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import Landing from '@pages/Landing/Landing';
+import colors from '../theme.config.json' assert { type: 'json' };
+import UseNotificationHandler from '@components/notification-handler/UseNotificationHandler';
 import { Provider } from 'react-redux';
 import { store } from '@store';
 import { ConfigProvider } from 'antd';
-import colors from './theme.config.json' assert { type: 'json' };
 import { App } from 'antd';
-import UseNotificationHandler from '@components/notification-handler/UseNotificationHandler';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

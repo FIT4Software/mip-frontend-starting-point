@@ -1,5 +1,14 @@
-interface ISideBarProps {
-  className?: string;
+import { SiderProps } from 'antd';
+import { AnchorLinkItemProps } from 'antd/es/anchor/Anchor';
+import { ReactNode, MutableRefObject } from 'react';
+
+interface ISidebarTriggerProps {
+  open: boolean;
 }
 
-export type { ISideBarProps };
+interface ISideBarProps extends SiderProps {
+  children?: ReactNode;
+  tabs?: AnchorLinkItemProps[];
+  anchorRef?: MutableRefObject<HTMLElement | undefined>;
+}
+export type { ISideBarProps, ISidebarTriggerProps };

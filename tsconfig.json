@@ -20,7 +20,7 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "baseUrl": "src",
-    "types": ["node"],
+    "types": ["node", "vite-plugin-pwa/client"],
     "paths": {
       "@interfaces": ["interfaces/index.ts"],
       "@components/*": ["components/*"],
@@ -29,6 +29,6 @@
       "@store": ["store/index.ts"]
     }
   },
-  "include": ["src"],
+  "include": ["src", "dev-dist/sw.js", "dev-dist/workbox-5357ef54.js"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

@@ -4,3 +4,7 @@ export * from './Required';
 export * from './ChecBox';
 export * from './SideBar';
 export * from './Notifications';
+export * from './Switch';
+export * from './Animation';
+export * from './Header';
+export * from './Grid';

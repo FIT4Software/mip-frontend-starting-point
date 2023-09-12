@@ -1,4 +1,7 @@
 import type { Preview } from '@storybook/react';
+import React from 'react';
+import { Provider } from 'react-redux';
+import { store } from '../src/store/store';
 import '../src/index.css';
 
 const preview: Preview = {
@@ -11,6 +14,13 @@ const preview: Preview = {
       },
     },
   },
+  decorators: [
+    (Story) => (
+      <Provider store={store}>
+        <Story></Story>
+      </Provider>
+    ),
+  ],
 };
 
 export default preview;

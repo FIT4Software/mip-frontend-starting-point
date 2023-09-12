@@ -1,4 +1,4 @@
-import colors from './src/theme.config.json' assert { type: 'json' };
+import colors from './theme.config.json' assert { type: 'json' };
 
 /** @type {import('tailwindcss').Config} */
 export default {
