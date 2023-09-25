@@ -1,5 +1,5 @@
 import Required from '@components/required/Required';
-import { ISwitchProps } from '@interfaces';
+import { ISwitchProps } from 'starting-point/interfaces';
 import { Switch as AntSwitch } from 'antd';
 import { CheckOutlined, CloseOutlined } from '@ant-design/icons';
 

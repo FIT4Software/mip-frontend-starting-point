@@ -1,4 +1,4 @@
-import { IAnimationProps } from '@interfaces';
+import { IAnimationProps } from 'starting-point/interfaces';
 import { useState, useEffect } from 'react';
 
 const Animation = ({

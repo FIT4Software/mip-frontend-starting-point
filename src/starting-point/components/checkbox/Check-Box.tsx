@@ -1,4 +1,4 @@
-import { IPropsCheckBox } from '@interfaces';
+import { IPropsCheckBox } from 'starting-point/interfaces';
 import Required from '@components/required/Required';
 import { Checkbox as AntCheckBox } from 'antd';
 
