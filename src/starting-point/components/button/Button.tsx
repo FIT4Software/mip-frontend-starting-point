@@ -1,5 +1,5 @@
 import Required from '@components/required/Required';
-import { IButtonProps } from '@interfaces';
+import { IButtonProps } from 'starting-point/interfaces';
 import { Button as AntButton } from 'antd';
 import { cva } from 'class-variance-authority';
 

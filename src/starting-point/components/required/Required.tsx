@@ -1,4 +1,4 @@
-import { IPropsRequired } from '@interfaces';
+import { IPropsRequired } from 'starting-point/interfaces';
 import getSizeClassName from '@components/utils/getSizeClassName';
 
 const Required = ({ children, show, classNameChildren }: IPropsRequired) => {

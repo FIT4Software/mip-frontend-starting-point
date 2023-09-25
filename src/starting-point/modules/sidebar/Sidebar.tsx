@@ -1,4 +1,4 @@
-import { ISideBarProps } from '@interfaces';
+import { ISideBarProps } from 'starting-point/interfaces';
 
 const SideBar = ({ className }: ISideBarProps) => {
   return <div></div>;

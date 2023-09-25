@@ -1,4 +1,4 @@
-import { IPropsComboBox } from '@interfaces';
+import { IPropsComboBox } from 'starting-point/interfaces';
 import { Select } from 'antd';
 import Required from '@components/required/Required';
 

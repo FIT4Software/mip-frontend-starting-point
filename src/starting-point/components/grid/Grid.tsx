@@ -1,5 +1,5 @@
 import { MutableRefObject } from 'react';
-import { IGridProps } from '@interfaces';
+import { IGridProps } from 'starting-point/interfaces';
 import { Table } from 'antd';
 import Logic from './Logic';
 import getSizeClassName from '@components/utils/getSizeClassName';

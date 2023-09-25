@@ -1,5 +1,5 @@
 import Button from '@components/button/Button';
-import { IHeaderProps } from '@interfaces';
+import { IHeaderProps } from 'starting-point/interfaces';
 import { Anchor, Drawer } from 'antd';
 import { MenuOutlined, CloseOutlined } from '@ant-design/icons';
 import { setOpenSideBar, useAppDispatch, useAppSelector } from '@store';
