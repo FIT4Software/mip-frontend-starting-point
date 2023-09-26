@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { IAnswer, InitialStateFeedback } from '@interfaces';
+import { IAnswer, InitialStateFeedback } from '@sp-interfaces';
 
 const initialState: InitialStateFeedback = {
   value: undefined,

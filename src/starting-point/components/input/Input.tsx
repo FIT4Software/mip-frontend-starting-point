@@ -1,5 +1,5 @@
 import { Input as AntInput } from 'antd';
-import { IPropsInput } from '@interfaces';
+import { IPropsInput } from '@sp-interfaces';
 
 const Input = (props: IPropsInput) => {
   return <AntInput {...props} />;

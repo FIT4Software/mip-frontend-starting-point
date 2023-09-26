@@ -1,7 +1,7 @@
 import './index.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Landing from '@sp-pages/Landing/Landing';
+import Landing from '@pages/Landing/Landing';
 import config from '@config';
 import UseNotificationHandler from '@sp-components/notification-handler/UseNotificationHandler';
 import axios from 'axios';
