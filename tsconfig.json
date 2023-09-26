@@ -22,10 +22,15 @@
     "baseUrl": "src",
     "types": ["node", "vite-plugin-pwa/client"],
     "paths": {
-      "@interfaces": ["starting-point/interfaces/index.ts"],
-      "@components/*": ["starting-point/components/*"],
-      "@pages/*": ["starting-point/pages/*"],
-      "@modules/*": ["starting-point/modules/*"],
+      "@sp-interfaces": ["starting-point/interfaces/index.ts"],
+      "@sp-components/*": ["starting-point/components/*"],
+      "@sp-pages/*": ["starting-point/pages/*"],
+      "@sp-modules/*": ["starting-point/modules/*"],
+      "@sp-store/*": ["starting-point/store/*"],
+      "@interfaces": ["interfaces/index.ts"],
+      "@components/*": ["components/*"],
+      "@pages/*": ["pages/*"],
+      "@modules/*": ["modules/*"],
       "@store": ["store/index.ts"]
     }
   },

@@ -1,8 +1,5 @@
-import {
-  useAppSelector,
-  useAppDispatch,
-  cleanStateNotifications,
-} from '@store';
+import { cleanStateNotifications } from '@sp-store/Notifications/Notifications';
+import { useAppSelector, useAppDispatch } from '@store';
 import { App } from 'antd';
 import { ReactNode, useEffect } from 'react';
 

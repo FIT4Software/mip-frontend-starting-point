@@ -1,12 +1,12 @@
-import Required from '@components/required/Required';
-import { ISwitchProps } from 'starting-point/interfaces';
+import Required from '@sp-components/required/Required';
+import { ISwitchProps } from '@sp-interfaces';
 import { Switch as AntSwitch } from 'antd';
 import { CheckOutlined, CloseOutlined } from '@ant-design/icons';
 
 const Switch = (props: ISwitchProps) => {
   const { className, required, type } = props;
   return (
-    <Required classNameChildren={className} show={required}>
+    <Required show={required}>
       <AntSwitch
         {...props}
         className={className}

@@ -1,5 +1,5 @@
-import Required from '@components/required/Required';
-import { IButtonProps } from 'starting-point/interfaces';
+import Required from '@sp-components/required/Required';
+import { IButtonProps } from '@sp-interfaces';
 import { Button as AntButton } from 'antd';
 import { cva } from 'class-variance-authority';
 
@@ -14,12 +14,12 @@ const buttonStyle = cva('button', {
 const Button = (props: IButtonProps) => {
   const { children, type, className, required } = props;
   return (
-    <Required classNameChildren={className} show={required}>
+    <Required show={required}>
       <AntButton
         {...props}
         className={`${buttonStyle({
           type: type === 'primary' ? 'primary' : null,
-        })} ${className}`}
+        })} ${className} h-full w-full`}
       >
         {children}
       </AntButton>

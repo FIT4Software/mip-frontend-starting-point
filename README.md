@@ -17,7 +17,7 @@ This template has only the basic and most ussed tecnologies inside FIT4Software.
 
 ## Clear Structure
 
-The template has **4** important folders:
+The template has **5** important folders:
 
 ### Components:
 
@@ -45,6 +45,18 @@ Finally _Pages_ it's like _Modules_, with the only difference that use not only 
 ### Imports:
 
 Finally when you are importing something, always use the preconfigured _relative paths_ with the `@`. For example:
+
+#### Importing from the starting-point directory
+
+```typescript
+import Button from '@sp-components/Button/Button';
+import { IButtonProps } from '@interfaces';
+import { useSelector } from '@store';
+import SideBar from '@sp-modules/SideBar/SideBar';
+import Landing from '@sp-pages/Landing/Landing';
+```
+
+#### Importing from your own modules, components, pages or stories
 
 ```typescript
 import Button from '@components/Button/Button';
@@ -82,3 +94,15 @@ In case you get an error like:
     JSON schema for the TypeScript compiler's configuration file
 
 We strongly suggest to run the next command inside of the project: `npm i --save @types/node`
+
+## Update:
+
+Inside the src directory there's a folder called starting-point with all the basic components, modules, pages and stories. We strongly encourage to don't change anything inside this folder because this will break the _Update_.
+
+### Updating the project:
+
+To update the project you should run `npm run update-starting-point` this command will overwrite the current starting-point folder with the latest one on existance.
+
+### Caveats:
+
+If you have some of the starting-point files, you should copy them before running the update so you won't lose your changes.

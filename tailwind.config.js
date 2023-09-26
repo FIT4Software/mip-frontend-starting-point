@@ -1,11 +1,11 @@
-import theme from './project.config.json' assert { type: 'json' };
+import config from './project.config';
 
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
-      colors: theme.colors,
+      colors: config.colors,
     },
   },
   plugins: [],

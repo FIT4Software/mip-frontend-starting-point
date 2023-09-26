@@ -1,6 +1,6 @@
 import { IPropsComboBox } from 'starting-point/interfaces';
 import { Select } from 'antd';
-import Required from '@components/required/Required';
+import Required from '@sp-components/required/Required';
 
 const ComboBox = (props: IPropsComboBox) => {
   return (

@@ -2,10 +2,11 @@ import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import { useDispatch, useSelector, TypedUseSelectorHook } from 'react-redux';
 import { logger } from 'redux-logger';
 import Landing from './Landing';
-import Notifications from './Notifications';
+import Notifications from '@sp-store/Notifications/Notifications';
+import Header from '@sp-store/SideBar/index';
 
 export const store = configureStore({
-  reducer: combineReducers({ Landing, Notifications }),
+  reducer: combineReducers({ Landing, Notifications, Header }),
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
 });
 

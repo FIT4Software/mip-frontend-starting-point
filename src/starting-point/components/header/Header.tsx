@@ -1,17 +1,19 @@
-import Button from '@components/button/Button';
-import { IHeaderProps } from 'starting-point/interfaces';
+import Button from '@sp-components/button/Button';
+import { IHeaderProps } from '@sp-interfaces';
 import { Anchor, Drawer } from 'antd';
 import { MenuOutlined, CloseOutlined } from '@ant-design/icons';
-import { setOpenSideBar, useAppDispatch, useAppSelector } from '@store';
-import { useScreenSize } from '@components/utils/useScreenSize';
+import { useAppDispatch, useAppSelector } from '@store';
+import { setOpenSideBar } from '@sp-store/SideBar';
+import { useScreenSize } from '@sp-components/utils/useScreenSize';
 
 const Header = ({ children, tabs, title, ...rest }: IHeaderProps) => {
   const screenSize = useScreenSize();
   const dispatch = useAppDispatch();
   const { open } = useAppSelector((state) => state.SideBar);
+
   return (
     <>
-      <div className="sticky w-full top-2 mt-2 z-50">
+      <div className="w-full">
         <div className="shadow-md flex justify-between w-full h-8 bg-background gap-2 rounded">
           <Anchor
             affix
@@ -29,7 +31,8 @@ const Header = ({ children, tabs, title, ...rest }: IHeaderProps) => {
         </div>
       </div>
       <Drawer
-        placement={screenSize.width > 768 ? 'right' : 'top'}
+        placement={screenSize.width > 425 ? 'right' : 'top'}
+        height="auto"
         closable={true}
         onClose={() => dispatch(setOpenSideBar())}
         open={open}
@@ -43,6 +46,7 @@ const Header = ({ children, tabs, title, ...rest }: IHeaderProps) => {
             />
           </div>
         }
+        zIndex={100}
         {...rest}
         closeIcon={''}
       >

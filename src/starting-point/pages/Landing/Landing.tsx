@@ -1,4 +1,4 @@
-import Button from '@components/button/Button';
+import Button from '@sp-components/button/Button';
 import { useAppSelector, useAppDispatch } from '@store';
 import { addCounter } from '@store';
 

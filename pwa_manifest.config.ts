@@ -1,11 +1,11 @@
 import { VitePWAOptions } from 'vite-plugin-pwa';
-import theme from './project.config.json' assert { type: 'json' };
+import config from './project.config';
 const manifest: Partial<VitePWAOptions> = {
   manifest: {
-    theme_color: theme.colors.primary,
-    background_color: theme.colors.background,
-    name: theme.name,
-    short_name: theme.name,
+    theme_color: config.colors.primary,
+    background_color: config.colors.background,
+    name: config.name,
+    short_name: config.name,
     icons: [
       {
         src: 'src/public/icon-192x192.png',

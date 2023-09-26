@@ -1,12 +1,10 @@
-import { IPropsRequired } from 'starting-point/interfaces';
-import getSizeClassName from '@components/utils/getSizeClassName';
+import { IPropsRequired } from '@sp-interfaces';
 
-const Required = ({ children, show, classNameChildren }: IPropsRequired) => {
-  const heightAndWidth = getSizeClassName(classNameChildren);
+const Required = ({ children, show }: IPropsRequired) => {
   return (
-    <div className={`flex gap-2 items-center ${heightAndWidth}`}>
+    <div className={`flex gap-2 items-center`}>
       {children}
-      {show && <span className="font-bold text-error">*</span>}
+      {!!show && <span className="font-bold text-error">*</span>}
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import CheckBox from '@components/checkbox/Check-Box';
+import CheckBox from '@sp-components/checkbox/Check-Box';
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {

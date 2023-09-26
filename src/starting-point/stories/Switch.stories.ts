@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Button from '@components/switch/Switch';
-import Switch from '@components/switch/Switch';
+import Button from '@sp-components/switch/Switch';
+import Switch from '@sp-components/switch/Switch';
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {

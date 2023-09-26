@@ -4,7 +4,7 @@ import {
   INotificationData,
   IPayloadUpdateStateNotification,
   IErrorTracker,
-} from 'starting-point/interfaces';
+} from '@sp-interfaces';
 
 const initialState: InitialStateNotifications = {
   error: {

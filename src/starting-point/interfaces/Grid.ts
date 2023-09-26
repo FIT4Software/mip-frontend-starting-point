@@ -1,4 +1,11 @@
+import { ReactNode } from 'react';
 import { TableProps } from 'antd';
-interface IGridProps<T> extends TableProps<T> {}
+interface IGridProps<T> extends TableProps<T> {
+  autoFitWidth?: boolean;
+}
 
-export type { IGridProps };
+interface ITitleGridProps {
+  children: ReactNode;
+}
+
+export type { IGridProps, ITitleGridProps };

@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { ColumnsType } from 'antd/es/table';
-import Grid from '@components/grid/Grid';
+import Grid from '@sp-components/grid/Grid';
 
 interface DataTest {
   key: string;

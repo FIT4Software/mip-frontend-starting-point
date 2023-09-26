@@ -1,5 +1,5 @@
-import { IPropsCheckBox } from 'starting-point/interfaces';
-import Required from '@components/required/Required';
+import { IPropsCheckBox } from '@sp-interfaces';
+import Required from '@sp-components/required/Required';
 import { Checkbox as AntCheckBox } from 'antd';
 
 const CheckBox = (props: IPropsCheckBox) => {
