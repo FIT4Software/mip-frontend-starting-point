@@ -1,5 +1,5 @@
 import { exec } from 'child_process';
-import { rmSync, rename, unlinkSync } from 'node:fs';
+import { rmSync, renameSync, unlinkSync } from 'node:fs';
 
 exec(
   'git clone https://github.com/FIT4Software/mip-frontend-starting-point.git',
@@ -27,9 +27,9 @@ exec(
       }
     });
 
-    rename(
+    renameSync(
       'C:/mip-frontend-starting-point/README.md',
-      './src/starting-point/README.md',
+      './README.md',
       (err) => {
         if (err) {
           throw err;
@@ -37,7 +37,7 @@ exec(
       }
     );
 
-    rename(
+    renameSync(
       'C:/mip-frontend-starting-point/src/starting-point',
       './src/starting-point',
       (err) => {
