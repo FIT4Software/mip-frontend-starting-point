@@ -31,7 +31,8 @@
       "@components/*": ["components/*"],
       "@pages/*": ["pages/*"],
       "@modules/*": ["modules/*"],
-      "@store": ["store/index.ts"]
+      "@store": ["store/index.ts"],
+      "@config": ["../project.config.ts"]
     }
   },
   "include": ["src", "dev-dist/sw.js", "dev-dist/workbox-5357ef54.js"],
