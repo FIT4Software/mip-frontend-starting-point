@@ -6,7 +6,7 @@ import { cva } from 'class-variance-authority';
 const buttonStyle = cva('button', {
   variants: {
     type: {
-      primary: ['bg-blue-500'],
+      primary: ['bg-primary'],
     },
   },
 });
