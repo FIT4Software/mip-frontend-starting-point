@@ -2,27 +2,28 @@ import { MutableRefObject } from 'react';
 import { IGridProps } from '@sp-interfaces';
 import { Table } from 'antd';
 import Logic from './Logic';
-import getSizeClassName from '@sp-components/utils/getSizeClassName';
+import TitleGrid from './TitleGrid';
 
 const Grid = <T extends object>({
   className,
   columns,
   title,
   autoFitWidth,
+  subtitle,
   ...rest
 }: IGridProps<T>) => {
   const { refContainer } = Logic(!!title);
   return (
     <div
-      className={`w-full bg-background rounded shadow-md relative overflow-auto h-full${getSizeClassName(
-        className
-      )}`}
+      className={`w-full h-full bg-background rounded relative px-5 pt-4`}
       ref={refContainer as MutableRefObject<HTMLDivElement>}
     >
+      <TitleGrid>{subtitle}</TitleGrid>
       <Table
         size="small"
-        className={`w-full h-full shadow-md ${className}`}
+        className={`${className} border rounded-sm mt-2 pb-8`}
         // scroll={{ y: scroll }}
+        style={{ height: '100%', width: '100%', overflow: 'auto' }}
         columns={
           autoFitWidth
             ? columns?.map((c) => ({ ...c, width: undefined }))
