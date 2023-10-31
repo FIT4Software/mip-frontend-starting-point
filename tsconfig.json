@@ -20,7 +20,7 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "baseUrl": "src",
-    "types": ["node", "vite-plugin-pwa/client"],
+    "types": ["node", "vite-plugin-pwa/client", "cypress"],
     "paths": {
       "@sp-interfaces": ["starting-point/interfaces/index.ts"],
       "@sp-components/*": ["starting-point/components/*"],
@@ -35,6 +35,11 @@
       "@config": ["../project.config.ts"]
     }
   },
-  "include": ["src", "dev-dist/sw.js", "dev-dist/workbox-5357ef54.js"],
+  "include": [
+    "src",
+    "dev-dist/sw.js",
+    "dev-dist/workbox-5357ef54.js",
+    "cypress"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
