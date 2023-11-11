@@ -4,7 +4,7 @@ import Required from '@sp-components/required/Required';
 
 const ComboBox = (props: IPropsComboBox) => {
   return (
-    <Required show={props.required} classNameChildren={props.className}>
+    <Required show={props.required}>
       <Select {...props} bordered={props.bordered ?? true} />
     </Required>
   );
