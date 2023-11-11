@@ -105,4 +105,4 @@ To update the project you should run `npm run update-starting-point` this comman
 
 ### Caveats:
 
-If you have some of the starting-point files, you should copy them before running the update so you won't lose your changes.
+If you have changed some of the starting-point files, you should copy them before running the update so you won't lose your changes.

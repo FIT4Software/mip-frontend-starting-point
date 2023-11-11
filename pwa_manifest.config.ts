@@ -1,5 +1,5 @@
 import { VitePWAOptions } from 'vite-plugin-pwa';
-import config from './src/starting-point/project.config';
+import config from './src/project.config';
 const manifest: Partial<VitePWAOptions> = {
   manifest: {
     theme_color: config.colors.primary,

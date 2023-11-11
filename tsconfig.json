@@ -27,7 +27,7 @@
       "@sp-pages/*": ["starting-point/pages/*"],
       "@sp-modules/*": ["starting-point/modules/*"],
       "@sp-store/*": ["starting-point/store/*"],
-      "@sp-config": ["starting-point/project.config.ts"],
+      "@config": ["project.config.ts"],
       "@interfaces": ["interfaces/index.ts"],
       "@components/*": ["components/*"],
       "@pages/*": ["pages/*"],

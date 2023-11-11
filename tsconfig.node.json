@@ -10,6 +10,6 @@
   "include": [
     "vite.config.ts",
     "pwa_manifest.config.ts",
-    "src/starting-point/project.config.ts"
+    "src/project.config.ts"
   ]
 }
