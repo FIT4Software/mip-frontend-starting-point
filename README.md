@@ -5,7 +5,7 @@ This is a custom template created by Juan Emilio Garcia to optimize development 
 ## Install
 
 Run: `npm install -g degit`
-And then run: `degit github:FIT4Software/mip-frontend-starting-point nombreDelProyecto`
+And then run: `degit github:FIT4Software/mip-frontend-starting-point projectName`
 
 ## Libraries
 
