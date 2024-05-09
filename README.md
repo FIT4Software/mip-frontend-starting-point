@@ -2,6 +2,11 @@
 
 This is a custom template created by Juan Emilio Garcia to optimize development at the time to start a project.
 
+## Install
+
+Run: `npm install -g degit`
+And then run: `degit github:FIT4Software/mip-frontend-starting-point nombreDelProyecto`
+
 ## Libraries
 
 This template has only the basic and most ussed tecnologies inside FIT4Software. Among them we can find:
